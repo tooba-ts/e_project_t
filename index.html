@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alberto Watch Company</title>
+   
+    <link rel="shortcut icon" href="./images/Untitled design.png " type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- Typefaces: Playfair Display (display serif) + Inter (UI sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="./css/styles.css?v=10">
+    
+
+
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg alberto-navbar sticky-top">
+
+    <div class="container">
+
+        <!-- LOGO -->
+        <a href="./index.html" class="brand-logo">
+
+            <i class="bi bi-watch"></i>
+
+            <span class="brand-text">
+                <span class="brand-name">ALBERTO</span>
+                <span class="brand-tagline">Watch Company</span>
+            </span>
+
+        </a>
+
+
+        <!-- MOBILE TOGGLER -->
+        <button
+            class="navbar-toggler menu-btn"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#albertoNavbar"
+            aria-controls="albertoNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <i class="bi bi-list"></i>
+
+        </button>
+
+
+        <!-- NAVIGATION -->
+        <div class="collapse navbar-collapse" id="albertoNavbar">
+
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="./index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/about.html">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/services.html">
+                        Services
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/product.html">
+                        Products
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./pages/contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <!-- RIGHT SIDE -->
+            <div class="nav-actions">
+
+                <a class="nav-btn" href="./pages/login.html">
+                    <i class="bi bi-person"></i>
+                    Login
+                </a>
+
+                <a class="nav-btn" href="./pages/cart.html">
+                    <i class="bi bi-bag"></i>
+                    Cart
+                </a>
+
+                <!-- SIDEBAR / MENU BUTTON -->
+                <button
+                    class="menu-btn sidebar-btn"
+                    type="button"
+                    aria-label="Open side menu"
+                    aria-controls="albertoSidebar"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#albertoSidebar">
+
+                    <i class="bi bi-layout-sidebar"></i>
+                    <span class="btn-label">Menu</span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- ================= SIDEBAR ================= -->
+
+<div
+    class="offcanvas offcanvas-end text-bg-dark"
+    tabindex="-1"
+    id="albertoSidebar">
+
+    <div class="offcanvas-header">
+
+        <h5 class="offcanvas-title">
+            ALBERTO
+        </h5>
+
+        <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="offcanvas">
+        </button>
+
+    </div>
+
+    <div class="offcanvas-body">
+
+        <p class="text-secondary">
+            Luxury timepieces crafted with elegance,
+            precision and timeless design.
+        </p>
+
+        <hr>
+
+        <ul class="list-unstyled">
+
+            <li class="mb-3">
+                <a href="./index.html" class="text-white text-decoration-none">
+                    <i class="bi bi-house me-2"></i>
+                    Home
+                </a>
+            </li>
+
+            <li class="mb-3">
+                <a href="./pages/about.html" class="text-white text-decoration-none">
+                    <i class="bi bi-building me-2"></i>
+                    About
+                </a>
+            </li>
+
+            <li class="mb-3">
+                <a href="./pages/services.html" class="text-white text-decoration-none">
+                    <i class="bi bi-gear me-2"></i>
+                    Services
+                </a>
+            </li>
+
+            <li class="mb-3">
+                <a href="./pages/product.html" class="text-white text-decoration-none">
+                    <i class="bi bi-watch me-2"></i>
+                    product
+                </a>
+            </li>
+
+            <li class="mb-3">
+                <a href="./pages/contact.html" class="text-white text-decoration-none">
+                    <i class="bi bi-envelope me-2"></i>
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <!-- ---------- LEFT : EDITORIAL COPY ---------- -->
+    <div class="hero__panel">
+
+        <div class="hero__panel-inner">
+
+            <span class="hero__mark ph-in ph-in--1">
+                <i class="bi bi-watch"></i>
+                Alberto Watch Company
+                <em aria-hidden="true"></em>
+                Est. 1954
+            </span>
+
+            <!-- One copy block per slide; JS keeps them in sync with the carousel -->
+            <div class="hero__copies">
+
+                <article class="hero__copy is-active" data-hero-copy>
+                    <span class="hero__kicker">Swiss Craftsmanship</span>
+                    <h1 class="hero__title">Timeless<span class="accent">Elegance</span></h1>
+                    <p class="hero__lead">
+                        Precision-crafted Swiss timepieces for the discerning
+                        collector — assembled by hand, regulated to the second.
+                    </p>
+                </article>
+
+                <article class="hero__copy" data-hero-copy>
+                    <span class="hero__kicker">Precision Engineered</span>
+                    <h1 class="hero__title">Swiss<span class="accent">Precision</span></h1>
+                    <p class="hero__lead">
+                        Hand-assembled movements engineered to outlast a
+                        lifetime, then tested across 1,000 hours of regulation.
+                    </p>
+                </article>
+
+                <article class="hero__copy" data-hero-copy>
+                    <span class="hero__kicker">Artisan Finished</span>
+                    <h1 class="hero__title">Crafted<span class="accent">Luxury</span></h1>
+                    <p class="hero__lead">
+                        Finest materials, finished to perfection by master
+                        artisans who polish every chamfer by eye.
+                    </p>
+                </article>
+
+                <article class="hero__copy" data-hero-copy>
+                    <span class="hero__kicker">Iconic Silhouettes</span>
+                    <h1 class="hero__title">Enduring<span class="accent">Design</span></h1>
+                    <p class="hero__lead">
+                        Classic branded silhouettes that outlive every passing
+                        trend — quiet, balanced and unmistakably precise.
+                    </p>
+                </article>
+
+                <article class="hero__copy" data-hero-copy>
+                    <span class="hero__kicker">Inside The Atelier</span>
+                    <h1 class="hero__title">Master<span class="accent">Craftsmanship</span></h1>
+                    <p class="hero__lead">
+                        Every detail perfected under one roof, from first
+                        polish to final water-resistance seal.
+                    </p>
+                </article>
+
+                <article class="hero__copy" data-hero-copy>
+                    <span class="hero__kicker">Heritage Since 1900</span>
+                    <h1 class="hero__title">A Legacy<span class="accent">of Time</span></h1>
+                    <p class="hero__lead">
+                        Punctuality is the virtue of the human — and the promise
+                        we make behind every movement we sell.
+                    </p>
+                </article>
+
+            </div>
+
+            <div class="hero__rule ph-in ph-in--4" aria-hidden="true"></div>
+
+            <div class="hero__actions ph-in ph-in--5">
+                <a href="./pages/product.html" class="hero__btn hero__btn--solid">
+                    Explore Collection
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+                <a href="./pages/contact.html" class="hero__btn hero__btn--ghost">
+                    <i class="bi bi-calendar3"></i>
+                    Book A Consultation
+                </a>
+            </div>
+
+            <ul class="hero__stats ph-in ph-in--6">
+                <li>
+                    <b>40+</b>
+                    <span>Brands</span>
+                </li>
+                <li>
+                    <b>20</b>
+                    <span>Timepieces</span>
+                </li>
+                <li>
+                    <b>1954</b>
+                    <span>Established</span>
+                </li>
+                
+            </ul>
+
+        </div>
+
+        <span class="hero__scroll" aria-hidden="true">
+            Scroll
+            <i></i>
+        </span>
+
+    </div>
+
+    <!-- ---------- RIGHT : ROTATING MEDIA ---------- -->
+    <div class="hero__media">
+
+        <div id="albertoCarousel" class="carousel slide carousel-fade alberto-carousel" data-bs-ride="carousel" data-bs-interval="5200" data-bs-pause="hover">
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="./images/images (12).jpg" alt="Timeless elegance — Alberto Swiss timepiece">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./images/images (34).jpg" alt="Swiss precision movement">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./images/images (17).jpg" alt="Hand-finished luxury dial">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./images/images (23).jpg" alt="Enduring iconic silhouette">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./images/images (30).jpg" alt="Inside the Alberto atelier">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="./images/images (27).jpg" alt="A legacy of mechanical timekeeping">
+                </div>
+
+            </div>
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#albertoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#albertoCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#albertoCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#albertoCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#albertoCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                <button type="button" data-bs-target="#albertoCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#albertoCarousel" data-bs-slide="prev">
+                <i class="bi bi-chevron-left carousel-control-icon" aria-hidden="true"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#albertoCarousel" data-bs-slide="next">
+                <i class="bi bi-chevron-right carousel-control-icon" aria-hidden="true"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+        </div>
+
+        <!-- slide counter -->
+        <span class="hero__count" aria-hidden="true">
+            <b data-hero-count>01</b>
+            <em>/</em>
+            <span data-hero-total>06</span>
+        </span>
+
+        <!-- live time, because it is a watch company -->
+        <span class="hero__clock" aria-hidden="true">
+            <i class="bi bi-clock-history"></i>
+            <b data-hero-clock>--:--:--</b>
+            <em>Local</em>
+        </span>
+
+    </div>
+
+</section>
+<br><br>
+<!-- Photo Grid -->
+<section class="brand-watches" id="gallery">
+    <div>
+<h2>OUR LUXURY & BRANDED WATCHES GALLERY</h2>
+</div>
+<div class="row"> 
+  <div class="col-md-4">
+    <img src="./images/images (12).jpg" style="width:100%">
+    <img src="./images/images (17).jpg" style="width:100%">
+    <img src="./images/images (14).jpg" style="width:100%">
+    <img src="./images/images (18).jpg" style="width:100%">
+    
+  </div>
+ 
+  <div class="col-md-4">
+    <img src="./images/images (19).jpg" style="width:100%">
+    <img src="./images/images (20).jpg" style="width:100%">
+    <img src="./images/images (21).jpg" style="width:100%">
+    <img src="./images/images (22).jpg" style="width:100%">
+    
+  </div>
+  <div class="col-md-4">
+    <img src="./images/images (23).jpg" style="width:100%">
+    <img src="./images/images (24).jpg" style="width:100%">
+    <img src="./images/images (25).jpg" style="width:100%">
+    <img src="./images/images (26).jpg" style="width:100%">
+    
+  </div>
+  <div class="col-md-4">
+    <img src="./images/images (27).jpg" style="width:100%">
+    <img src="./images/images (28).jpg" style="width:100%">
+    <img src="./images/images (29).jpg" style="width:100%">
+    <img src="./images/images (30).jpg" style="width:100%">
+    
+  </div>
+  <div class="col-md-4">
+    <img src="./images/images (31).jpg" style="width:100%">
+    <img src="./images/images (32).jpg" style="width:100%">
+    <img src="./images/images (33).jpg" style="width:100%">
+    <img src="./images/images (34).jpg" style="width:100%">
+    
+  </div>
+  <div class="col-md-4">
+    <img src="./images/images (36).jpg" style="width:100%">
+    <img src="./images/images (37).jpg" style="width:100%">
+    <img src="./images/images (39).jpg" style="width:100%">
+    <img src="./images/images (40).jpg" style="width:100%">
+    
+  </div>
+</div>
+</section>
+
+
+<!-- ================= PRODUCT FILTER ================= -->
+
+<section class="shop-section" id="products">
+
+    <div class="shop-head">
+
+        <span class="shop-kicker">Curated For The Connoisseur</span>
+
+        <h2 class="shop-title">Our Products</h2>
+
+        <span class="shop-line"></span>
+
+        <p class="shop-sub">
+            Explore our hand-picked collection of luxury, smart and branded
+            timepieces — crafted for those who value precision and style.
+        </p>
+
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="filter-bar">
+
+        <button class="filterBtn active" data-filter="all">
+            All
+        </button>
+
+        <button class="filterBtn" data-filter="luxury">
+            Luxury
+        </button>
+
+        <button class="filterBtn" data-filter="smart">
+            Smart
+        </button>
+
+        <button class="filterBtn" data-filter="branded">
+            Branded
+        </button>
+
+    </div>
+
+    <!-- Products Grid -->
+    <div class="products">
+
+        <!-- CARD 1 -->
+        <div class="product" data-category="luxury">
+            <img src="./images/images (12).jpg" alt="Alberto Heritage Chronograph">
+            <h3>Heritage Chronograph</h3>
+            <div class="product-cat">Luxury</div>
+            <span class="price">$4,850</span>
+            <button type="button" class="product-btn">
+                <i class="bi bi-bag"></i> Add to Cart
+            </button>
+        </div>
+
+        <!-- CARD 2 -->
+        <div class="product" data-category="luxury">
+            <img src="./images/images (20).jpg" alt="Alberto Royal Skeleton">
+            <h3>Royal Skeleton</h3>
+            <div class="product-cat">Luxury</div>
+            <span class="price">$12,400</span>
+            <button type="button" class="product-btn">
+                <i class="bi bi-bag"></i> Add to Cart
+            </button>
+        </div>
+
+        <!-- CARD 3 -->
+        <div class="product" data-category="luxury">
+            <img src="./images/images (18).jpg" alt="Alberto Classic Rose Gold">
+            <h3>Classic Rose Gold</h3>
+            <div class="product-cat">Luxury</div>
+            <span class="price">$6,150</span>
+            <button type="button" class="product-btn">
+                <i class="bi bi-bag"></i> Add to Cart
+            </button>
+        </div>
+
+        <!-- CARD 4 -->
+        <div class="product" data-category="luxury">
+            <img src="./images/images (19).jpg" alt="Alberto Legacy Perpetual">
+            <h3>Legacy Perpetual</h3>
+            <div class="product-cat">Luxury</div>
+            <span class="price">$18,900</span>
+            <button type="button" class="product-btn">
+                <i class="bi bi-bag"></i> Add to Cart
+            </button>
+        </div>
+
+        <!-- CARD 5 -->
+        <div class="product" data-category="smart">
+            <img src="./images/images (25).jpg" alt="Alberto Smart Pulse Pro">
+            <h3>Smart Pulse Pro</h3>
+            <div class="product-cat">Smart</div>
+            <span class="price">$1,250</span>
+            <button type="button" class="product-btn">
+                <i class="bi bi-bag"></i> Add to Cart
+            </button>
+        </div>
+
+        <!-- CARD 6 -->
+        <div class="product" data-category="smart">
+            <img src="./images/images (27).jpg" alt="Alberto Fit Tracker 2">
+            <h3>Fit Tracker 2</h3>
+            <div class="product-cat">Smart</div>
+            <span class="price">$990</span>
+            <button type="button" class="product-btn">
+                <i class="bi bi-bag"></i> Add to Cart
+            </button>
+        </div>
+
+        <!-- CARD 7 -->
+        <div class="product" data-category="smart">
+            <img src="./images/images (28).jpg" alt="Alberto Aura Smart">
+            <h3>Aura Smart</h3>
+            <div class="product-cat">Smart</div>
+            <span class="price">$1,480</span>
+            <button type="button" class="product-btn">
+                <i class="bi bi-bag"></i> Add to Cart
+            </button>
+        </div>
+
+        <!-- CARD 8 -->
+        <div class="product" data-category="smart">
+            <img src="./images/images (30).jpg" alt="Alberto Chrono Smart">
+            <h3>Chrono Smart</h3>
+            <div class="product-cat">Smart</div>
+            <span class="price">$1,720</span>
+            <button type="button" class="product-btn">
+                <i class="bi bi-bag"></i> Add to Cart
+            </button>
+        </div>
+
+        <!-- CARD 9 -->
+        <div class="product" data-category="branded">
+            <img src="./images/images (31).jpg" alt="Rolex Submariner">
+            <h3>Rolex Submariner</h3>
+            <div class="product-cat">Branded</div>
+            <span class="price">$18,900</span>
+            <button type="button" class="product-btn">
+                <i class="bi bi-bag"></i> Add to Cart
+            </button>
+        </div>
+
+        <!-- CARD 10 -->
+        <div class="product" data-category="branded">
+            <img src="./images/images (32).jpg" alt="Cartier Santos">
+            <h3>Cartier Santos</h3>
+            <div class="product-cat">Branded</div>
+            <span class="price">$15,200</span>
+            <button type="button" class="product-btn">
+                <i class="bi bi-bag"></i> Add to Cart
+            </button>
+        </div>
+
+        <!-- CARD 11 -->
+        <div class="product" data-category="branded">
+            <img src="./images/images (35).jpg" alt="Seagull 1963">
+            <h3>Seagull 1963</h3>
+            <div class="product-cat">Branded</div>
+            <span class="price">$2,850</span>
+            <button type="button" class="product-btn">
+                <i class="bi bi-bag"></i> Add to Cart
+            </button>
+        </div>
+
+        <!-- CARD 12 -->
+        <div class="product" data-category="branded">
+            <img src="./images/images (38).jpg" alt="Shanghai Watch Classic">
+            <h3>Shanghai Classic</h3>
+            <div class="product-cat">Branded</div>
+            <span class="price">$3,450</span>
+            <button type="button" class="product-btn">
+                <i class="bi bi-bag"></i> Add to Cart
+            </button>
+        </div>
+
+    </div><!-- /.products -->
+
+</section><!-- /.shop-section -->
+
+
+<!-- ================= DISCOVER MORE ================= -->
+
+<div class="brand-watches-more">
+    <a href="./pages/product.html" class="brand-watches-more-btn">
+        Discover The Full Collection <i class="bi bi-arrow-right"></i>
+    </a>
+</div>
+
+
+ <!-- ===== PRICE LIST ===== -->
+  <section class="section" id="prices">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Transparent Pricing</span>
+        <h2>Complete Price List</h2>
+        <p>Every timepiece we carry, listed with its current retail price. Filter by line-up to browse faster.</p>
+        <div class="divider"></div>
+      </div>
+      <div class="price-filter">
+        <label for="priceFilter"><strong>Filter by line-up:</strong></label>
+        <select id="priceFilter">
+          <option value="All">All Watches</option>
+          <option value="Luxury">Luxury</option>
+          <option value="Vintage">Vintage</option>
+          <option value="Smart">Smart Watches</option>
+          <option value="Fashion">Fashion</option>
+        </select>
+      </div>
+      <div class="price-table-wrap">
+        <table class="price-table" id="priceTable">
+          <thead>
+            <tr><th>Brand</th><th>Model</th><th>Line-Up</th><th>Price</th><th></th></tr>
+          </thead>
+          <tbody id="priceBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+
+<!-- ================= WATCH DETAIL POPUP ================= -->
+
+<div class="modal fade" id="watchModal" tabindex="-1" aria-labelledby="watchModalTitle" aria-hidden="true">
+
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content wd-modal">
+
+            <button
+                type="button"
+                class="btn-close wd-modal-close"
+                data-bs-dismiss="modal"
+                aria-label="Close watch details">
+            </button>
+
+            <div class="modal-body wd-modal-body">
+
+                <figure class="wd-modal-media">
+                    <img id="wdModalImage" src="" alt="">
+                </figure>
+
+                <div class="wd-modal-info">
+
+                    <span class="wd-modal-kicker" id="wdModalCategory"></span>
+
+                    <h2 class="wd-modal-title" id="watchModalTitle"></h2>
+
+                    <span class="wd-modal-price" id="wdModalPrice"></span>
+
+                    <p class="wd-modal-desc" id="wdModalDesc"></p>
+
+                    <ul class="wd-modal-specs" id="wdModalSpecs"></ul>
+
+                    <div class="wd-modal-buy">
+
+                        <div class="wd-qty">
+                            <span class="wd-qty-label">Quantity</span>
+                            <div class="wd-qty-stepper">
+                                <button type="button" id="wdQtyDown" aria-label="Decrease quantity">
+                                    <i class="bi bi-dash"></i>
+                                </button>
+                                <input
+                                    type="text"
+                                    id="wdQty"
+                                    value="1"
+                                    inputmode="numeric"
+                                    aria-label="Quantity">
+                                <button type="button" id="wdQtyUp" aria-label="Increase quantity">
+                                    <i class="bi bi-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <button type="button" class="product-btn wd-modal-add" id="wdModalAdd">
+                            <i class="bi bi-bag"></i> Add to Cart
+                        </button>
+
+                    </div>
+
+                    <p class="wd-modal-note" id="wdModalNote" aria-live="polite"></p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div><!-- /#watchModal -->
+
+
+<!-- jQuery (required by custom scripts) -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Custom JS -->
+<script src="./js/javascript.js"></script>
+
+
+<!-- ============ FOOTER ============ -->
+    <footer class="footer">
+
+        <!-- Top row: brand + link groups -->
+        <div class="footer-top">
+
+            <!-- Brand -->
+            <div>
+                <div class="logo">
+                    <span>&#9201;</span>
+                    <span>ALBERTO</span>
+                </div>
+                <p class="brand-text">
+                    Full-service watch repair, appraisal and retail since 1952.
+                    An unparalleled selection of luxury timepieces, delivered
+                    with first-class service.
+                </p>
+
+                <!-- Social -->
+                <h4 class="footer-social-title">Follow Us</h4>
+                <ul class="footer-social">
+                    <li>
+                        <a href="https://www.instagram.com/albertowatches"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Alberto Watch Company on Instagram">
+                            <i class="bi bi-instagram" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/albertowatches"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Alberto Watch Company on Facebook">
+                            <i class="bi bi-facebook" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/albertowatches"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Alberto Watch Company on LinkedIn">
+                            <i class="bi bi-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="./pages/about.html">About Us</a></li>
+                    <li><a href="./pages/services.html">Services</a></li>
+                    <li><a href="./pages/product.html">Products</a></li>
+                    <li><a href="./pages/contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Collections -->
+            <div>
+                <h4>Top Collections</h4>
+                <ul>
+                    <li><a href="./pages/product.html#collection">Luxury Watches</a></li>
+                    <li><a href="./pages/product.html#collection">Vintage Watches</a></li>
+                    <li><a href="./pages/product.html#collection">Smart Watches</a></li>
+                    <li><a href="#prices">Price List</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div>
+                <h4>Contact Info</h4>
+                <ul class="footer-contact">
+                    <li>
+                        <strong>Address</strong>
+                        <small>245 Madison Avenue, New York, NY 10016</small>
+                    </li>
+                    <li>
+                        <strong>Phone</strong>
+                        <small><a href="tel:+12125550184">+1 (212) 555-0184</a></small>
+                    </li>
+                    <li>
+                        <strong>Email</strong>
+                        <small><a href="mailto:info@albertowatches.com">info@albertowatches.com</a></small>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Bottom row: copyright + small links -->
+        <div class="footer-bottom">
+            <span>&copy; 2026 Alberto Watch Company. All rights reserved.</span>
+            <div class="fb-links">
+                <a href="#home">Home</a>
+                <a href="./pages/about.html">About</a>
+                <a href="#gallery">Gallery</a>
+                <a href="./pages/services.html">Service</a>
+                <a href="./pages/contact.html">Contact</a>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>
+

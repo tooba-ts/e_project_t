@@ -1,0 +1,1149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alberto Watch Company</title>
+ <link rel="shortcut icon" href="../images/Untitled design.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+   <link rel="stylesheet" href="../css/styles.css?v=9">
+</head>
+
+<body>
+    <!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg alberto-navbar sticky-top">
+
+    <div class="container">
+
+        <!-- LOGO -->
+        <a href="../index.html" class="brand-logo">
+
+            <i class="bi bi-watch"></i>
+
+            <span class="brand-text">
+                <span class="brand-name">ALBERTO</span>
+                <span class="brand-tagline">WATCH COMPANY</span>
+            </span>
+
+        </a>
+
+
+        <!-- MOBILE TOGGLER -->
+        <button
+            class="navbar-toggler menu-btn"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#albertoNavbar"
+            aria-controls="albertoNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <i class="bi bi-list"></i>
+
+        </button>
+
+
+        <!-- NAVIGATION -->
+        <div class="collapse navbar-collapse" id="albertoNavbar">
+
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="../index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./services.html">
+                        Services
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./product.html">
+                        Products
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <!-- RIGHT SIDE -->
+            <div class="nav-actions">
+
+                <button class="nav-btn">
+                    <i class="bi bi-person"></i>
+                    Login
+                </button>
+
+                <a class="nav-btn" href="./cart.html">
+                    <i class="bi bi-bag"></i>
+                    Cart
+                </a>
+
+                <!-- SIDEBAR / MENU BUTTON -->
+                <button
+                    class="menu-btn sidebar-btn"
+                    type="button"
+                    aria-label="Open side menu"
+                    aria-controls="albertoSidebar"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#albertoSidebar">
+
+                    <i class="bi bi-layout-sidebar"></i>
+                    <span class="btn-label">Menu</span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- ================= SIDEBAR ================= -->
+
+<div
+    class="offcanvas offcanvas-end text-bg-dark"
+    tabindex="-1"
+    id="albertoSidebar">
+
+    <div class="offcanvas-header">
+
+        <h5 class="offcanvas-title">
+            ALBERTO
+        </h5>
+
+        <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="offcanvas">
+        </button>
+
+    </div>
+
+    <div class="offcanvas-body">
+
+        <p class="text-secondary">
+            Luxury timepieces crafted with elegance,
+            precision and timeless design.
+        </p>
+
+        <hr>
+
+        <ul class="list-unstyled">
+
+            <li class="mb-3">
+                <a href="../index.html" class="text-white text-decoration-none">
+                    <i class="bi bi-house me-2"></i>
+                    Home
+                </a>
+            </li>
+
+            <li class="mb-3">
+                <a href="./about.html" class="text-white text-decoration-none">
+                    <i class="bi bi-building me-2"></i>
+                    About
+                </a>
+            </li>
+
+            <li class="mb-3">
+                <a href="./services.html" class="text-white text-decoration-none">
+                    <i class="bi bi-gear me-2"></i>
+                    Services
+                </a>
+            </li>
+
+            <li class="mb-3">
+                <a href="./product.html" class="text-white text-decoration-none">
+                    <i class="bi bi-watch me-2"></i>
+                    product
+                </a>
+            </li>
+
+            <li class="mb-3">
+                <a href="./contact.html" class="text-white text-decoration-none">
+                    <i class="bi bi-envelope me-2"></i>
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+
+<!-- Bootstrap JS -->
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<!-- Custom JS -->
+<script src="../js/javascript.js"></script>
+
+ <!-- =========================================================
+     HERO SECTION
+=========================================================  -->
+
+<header class="services-hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="container position-relative">
+
+        <div class="row align-items-center min-vh-100">
+
+            <div class="col-lg-8">
+
+                <p class="hero-label">
+                    ALBERTO WATCH COMPANY
+                </p>
+
+                <h1>
+                    Expert Care for<br>
+                    <span>Timeless Pieces</span>
+                </h1>
+
+                <p class="hero-description">
+                    From precision repairs to complete restoration,
+                    our specialists preserve the performance, beauty
+                    and value of your timepiece.
+                </p>
+
+                <div class="hero-buttons">
+               
+                    <a href="../pages/contact.html"
+                       class="btn btn-outline-light btn-lg ms-2">
+                        Book an Appointment
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     INTRODUCTION
+========================================================= -->
+
+<section class="section-padding introduction" id="services">
+
+    <div class="container">
+
+        <div class="section-heading text-center">
+
+            <span class="section-label">
+                OUR EXPERTISE
+            </span>
+
+            <h2>
+                Complete Watch Care
+            </h2>
+
+            <p>
+                Every timepiece deserves meticulous attention.
+                Our professional services combine traditional
+                craftsmanship with modern precision.
+            </p>
+
+        </div>
+
+
+        <!-- SERVICE CARDS -->
+
+        <div class="row g-4 mt-4">
+
+            <!-- SERVICE 1 -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="service-card">
+
+                    <div class="service-image">
+
+                        <img
+                            src="../images/pexels-tima-miroshnichenko-8327872.jpg"
+                            alt="Luxury watch repair">
+
+                        <div class="service-icon">
+                            <i class="bi bi-tools"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="service-content">
+
+                        <span class="service-number">
+                            01
+                        </span>
+
+                        <h3>
+                            Watch Repair
+                        </h3>
+
+                        <p>
+                            Professional diagnosis and repair for
+                            mechanical, automatic and quartz
+                            timepieces.
+                        </p>
+
+                        <button
+                            class="service-link"
+                            data-service="repair">
+
+                            Learn More
+                            <i class="bi bi-arrow-right"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SERVICE 2 -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="service-card">
+
+                    <div class="service-image">
+
+                        <img
+                            src="../images/pexels-tima-miroshnichenko-8327541.jpg"
+                            alt="Watch maintenance">
+
+                        <div class="service-icon">
+                            <i class="bi bi-gear-wide-connected"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="service-content">
+
+                        <span class="service-number">
+                            02
+                        </span>
+
+                        <h3>
+                            Maintenance
+                        </h3>
+
+                        <p>
+                            Detailed servicing designed to maintain
+                            accuracy, reliability and long-term
+                            performance.
+                        </p>
+
+                        <button
+                            class="service-link"
+                            data-service="maintenance">
+
+                            Learn More
+                            <i class="bi bi-arrow-right"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SERVICE 3 -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="service-card">
+
+                    <div class="service-image">
+
+                        <img
+                            src="../images/pexels-tima-miroshnichenko-8327601.jpg"
+                            alt="Watch battery replacement">
+
+                        <div class="service-icon">
+                            <i class="bi bi-battery-half"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="service-content">
+
+                        <span class="service-number">
+                            03
+                        </span>
+
+                        <h3>
+                            Battery Replacement
+                        </h3>
+
+                        <p>
+                            Reliable battery replacement and testing
+                            for quartz and compatible timepieces.
+                        </p>
+
+                        <button
+                            class="service-link"
+                            data-service="battery">
+
+                            Learn More
+                            <i class="bi bi-arrow-right"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SERVICE 4 -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="service-card">
+
+                    <div class="service-image">
+
+                        <img
+                            src="../images/images (1).jpg"
+                            alt="Luxury watch polishing">
+
+                        <div class="service-icon">
+                            <i class="bi bi-stars"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="service-content">
+
+                        <span class="service-number">
+                            04
+                        </span>
+
+                        <h3>
+                            Polishing & Restoration
+                        </h3>
+
+                        <p>
+                            Restore the appearance of your timepiece
+                            while preserving its original character.
+                        </p>
+
+                        <button
+                            class="service-link"
+                            data-service="polishing">
+
+                            Learn More
+                            <i class="bi bi-arrow-right"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SERVICE 5 -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="service-card">
+
+                    <div class="service-image">
+
+                        <img
+                            src="../images/images (2).jpg"
+                            alt="Watch authentication and appraisal">
+
+                        <div class="service-icon">
+                            <i class="bi bi-patch-check"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="service-content">
+
+                        <span class="service-number">
+                            05
+                        </span>
+
+                        <h3>
+                            Appraisal & Authentication
+                        </h3>
+
+                        <p>
+                            Professional examination and documentation
+                            for selected luxury timepieces.
+                        </p>
+
+                        <button
+                            class="service-link"
+                            data-service="authentication">
+
+                            Learn More
+                            <i class="bi bi-arrow-right"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- SERVICE 6 -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="service-card">
+
+                    <div class="service-image">
+
+                        <img
+                            src="../images/images (3).jpg"
+                            alt="Watch strap replacement">
+
+                        <div class="service-icon">
+                            <i class="bi bi-watch"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="service-content">
+
+                        <span class="service-number">
+                            06
+                        </span>
+
+                        <h3>
+                            Strap & Bracelet Service
+                        </h3>
+
+                        <p>
+                            Strap replacement, bracelet adjustment
+                            and fitting for a comfortable finish.
+                        </p>
+
+                        <button
+                            class="service-link"
+                            data-service="strap">
+
+                            Learn More
+                            <i class="bi bi-arrow-right"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     WHY ALBERTO
+========================================================= -->
+
+<section class="why-section">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <span class="section-label">
+                    THE ALBERTO STANDARD
+                </span>
+
+                <h2>
+                    Precision Behind<br>
+                    Every Service
+                </h2>
+
+                <p class="why-text">
+                    A luxury watch is more than an instrument for
+                    measuring time. It is a piece of engineering,
+                    craftsmanship and personal history.
+                </p>
+
+                <p class="why-text">
+                    Our service approach focuses on careful inspection,
+                    precision workmanship and attention to the smallest
+                    details.
+                </p>
+
+                <a href="#appointment"
+                   class="btn btn-gold mt-3">
+                    Schedule a Service
+                </a>
+
+            </div>
+
+
+            <div class="col-lg-6 mt-5 mt-lg-0">
+
+                <div class="stats-wrapper">
+
+                    <div class="stat-box">
+
+                        <div class="stat-number"
+                             data-target="25">
+                            0
+                        </div>
+
+                        <span>
+                            Years of<br>Craftsmanship
+                        </span>
+
+                    </div>
+
+                    <div class="stat-box">
+
+                        <div class="stat-number"
+                             data-target="10000">
+                            0
+                        </div>
+
+                        <span>
+                            Timepieces<br>Serviced
+                        </span>
+
+                    </div>
+
+                    <div class="stat-box">
+
+                        <div class="stat-number"
+                             data-target="6">
+                            0
+                        </div>
+
+                        <span>
+                            Core Service<br>Categories
+                        </span>
+
+                    </div>
+
+                    <div class="stat-box">
+
+                        <div class="stat-number"
+                             data-target="100">
+                            0
+                        </div>
+
+                        <span>
+                            Attention to<br>Detail
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SERVICE PROCESS
+========================================================= -->
+
+<section class="section-padding process-section">
+
+    <div class="container">
+
+        <div class="section-heading text-center">
+
+            <span class="section-label">
+                OUR PROCESS
+            </span>
+
+            <h2>
+                From Inspection to Completion
+            </h2>
+
+            <p>
+                A transparent approach to professional watch servicing.
+            </p>
+
+        </div>
+
+
+        <div class="row process-row mt-5">
+
+            <div class="col-md-3 process-step">
+
+                <div class="process-icon">
+                    <span>01</span>
+                </div>
+
+                <h4>
+                    Inspection
+                </h4>
+
+                <p>
+                    Your timepiece is carefully examined to identify
+                    its service requirements.
+                </p>
+
+            </div>
+
+
+            <div class="col-md-3 process-step">
+
+                <div class="process-icon">
+                    <span>02</span>
+                </div>
+
+                <h4>
+                    Assessment
+                </h4>
+
+                <p>
+                    We determine the recommended service and explain
+                    the required work.
+                </p>
+
+            </div>
+
+
+            <div class="col-md-3 process-step">
+
+                <div class="process-icon">
+                    <span>03</span>
+                </div>
+
+                <h4>
+                    Service
+                </h4>
+
+                <p>
+                    Our technicians perform the agreed service using
+                    appropriate tools and techniques.
+                </p>
+
+            </div>
+
+
+            <div class="col-md-3 process-step">
+
+                <div class="process-icon">
+                    <span>04</span>
+                </div>
+
+                <h4>
+                    Quality Check
+                </h4>
+
+                <p>
+                    The watch is inspected again before being returned
+                    to its owner.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     APPOINTMENT CTA
+========================================================= -->
+
+<section class="appointment-section" id="appointment">
+
+    <div class="container">
+
+        <div class="appointment-box">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-8">
+
+                    <span class="section-label">
+                        PERSONALIZED SERVICE
+                    </span>
+
+                    <h2>
+                        Give Your Timepiece<br>
+                        the Care It Deserves.
+                    </h2>
+
+                    <p>
+                        Schedule an appointment with Alberto Watch
+                        Company and let our specialists assist you
+                        with your timepiece.
+                    </p>
+
+                </div>
+
+                <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
+
+                    <a href="#contact"
+                       class="btn btn-gold btn-lg">
+                        Book an Appointment
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FAQ
+========================================================= -->
+
+<section class="section-padding faq-section">
+
+    <div class="container">
+
+        <div class="section-heading text-center">
+
+            <span class="section-label">
+                FAQ
+            </span>
+
+            <h2>
+                Frequently Asked Questions
+            </h2>
+
+        </div>
+
+
+        <div class="accordion mt-5" id="faqAccordion">
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button
+                        class="accordion-button"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faqOne">
+
+                        How often should my watch be serviced?
+
+                    </button>
+
+                </h2>
+
+                <div
+                    id="faqOne"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#faqAccordion">
+
+                    <div class="accordion-body">
+
+                        Service intervals depend on the watch,
+                        movement and manufacturer's recommendations.
+                        Regular inspection can help identify issues
+                        before they become more serious.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faqTwo">
+
+                        Do you repair automatic watches?
+
+                    </button>
+
+                </h2>
+
+                <div
+                    id="faqTwo"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion">
+
+                    <div class="accordion-body">
+
+                        Yes. Alberto provides servicing and repair
+                        support for selected automatic and mechanical
+                        timepieces.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faqThree">
+
+                        Can you replace watch batteries?
+
+                    </button>
+
+                </h2>
+
+                <div
+                    id="faqThree"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion">
+
+                    <div class="accordion-body">
+
+                        Battery replacement is available for compatible
+                        quartz timepieces. The watch is inspected before
+                        the replacement is carried out.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="accordion-item">
+
+                <h2 class="accordion-header">
+
+                    <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#faqFour">
+
+                        Do you provide watch appraisal?
+
+                    </button>
+
+                </h2>
+
+                <div
+                    id="faqFour"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#faqAccordion">
+
+                    <div class="accordion-body">
+
+                        Appraisal and authentication services are
+                        available for selected timepieces subject to
+                        inspection and documentation requirements.
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= DISCOVER MORE ================= -->
+
+<div class="brand-watches-more">
+    <a href="../pages/contact.html" class="brand-watches-more-btn">
+        Discover The Full Collection <i class="bi bi-arrow-right"></i>
+    </a>
+</div>
+
+<!-- ============ FOOTER ============ -->
+    <footer class="footer">
+
+        <!-- Top row: brand + link groups -->
+        <div class="footer-top">
+
+            <!-- Brand -->
+            <div>
+                <div class="logo">
+                    <span>&#9201;</span>
+                    <span>ALBERTO</span>
+                </div>
+                <p class="brand-text">
+                    Full-service watch repair, appraisal and retail since 1952.
+                    An unparalleled selection of luxury timepieces, delivered
+                    with first-class service.
+                </p>
+
+                <!-- Social -->
+                <h4 class="footer-social-title">Follow Us</h4>
+                <ul class="footer-social">
+                    <li>
+                        <a href="https://www.instagram.com/albertowatches"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Alberto Watch Company on Instagram">
+                            <i class="bi bi-instagram" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/albertowatches"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Alberto Watch Company on Facebook">
+                            <i class="bi bi-facebook" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/albertowatches"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Alberto Watch Company on LinkedIn">
+                            <i class="bi bi-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../index.html#home">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Collections -->
+            <div>
+                <h4>Top Collections</h4>
+                <ul>
+                    <li><a href="product.html#collection">Luxury Watches</a></li>
+                    <li><a href="product.html#collection">Vintage Watches</a></li>
+                    <li><a href="product.html#collection">Smart Watches</a></li>
+                    <li><a href="../index.html#prices">Price List</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div>
+                <h4>Contact Info</h4>
+                <ul class="footer-contact">
+                    <li>
+                        <strong>Address</strong>
+                        <small>245 Madison Avenue, New York, NY 10016</small>
+                    </li>
+                    <li>
+                        <strong>Phone</strong>
+                        <small><a href="tel:+12125550184">+1 (212) 555-0184</a></small>
+                    </li>
+                    <li>
+                        <strong>Email</strong>
+                        <small><a href="mailto:info@albertowatches.com">info@albertowatches.com</a></small>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Bottom row: copyright + small links -->
+        <div class="footer-bottom">
+            <span>&copy; 2026 Alberto Watch Company. All rights reserved.</span>
+            <div class="fb-links">
+                <a href="../index.html#home">Home</a>
+                <a href="about.html">About</a>
+                <a href="../index.html#gallery">Gallery</a>
+                <a href="services.html">Service</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

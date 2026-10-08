@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sign in to your Alberto Watch Company account to track orders, manage collections and book private consultations.">
+
+    <title>Login | Alberto Watch Company</title>
+ <link rel="shortcut icon" href="../images/Untitled design.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+
+    <!-- Typefaces: Playfair Display (display serif) + Inter (UI sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="../css/styles.css?v=9">
+</head>
+
+<body class="auth-page">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar navbar-expand-lg alberto-navbar sticky-top">
+
+        <div class="container">
+
+            <!-- LOGO -->
+            <a href="../index.html" class="brand-logo">
+
+                <i class="bi bi-watch"></i>
+
+                <span class="brand-text">
+                    <span class="brand-name">ALBERTO</span>
+                    <span class="brand-tagline">WATCH COMPANY</span>
+                </span>
+
+            </a>
+
+            <!-- MOBILE TOGGLER -->
+            <button
+                class="navbar-toggler menu-btn"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#albertoNavbar"
+                aria-controls="albertoNavbar"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <i class="bi bi-list"></i>
+
+            </button>
+
+            <!-- NAVIGATION -->
+            <div class="collapse navbar-collapse" id="albertoNavbar">
+
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">
+                            About
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./services.html">
+                            Services
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./product.html">
+                            Products
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">
+                            Contact
+                        </a>
+                    </li>
+
+                </ul>
+
+                <!-- RIGHT SIDE -->
+                <div class="nav-actions">
+
+                    <a class="nav-btn" href="./login.html" aria-current="page">
+                        <i class="bi bi-person"></i>
+                        Sign In
+                    </a>
+
+                    <a class="nav-btn" href="./cart.html">
+                        <i class="bi bi-bag"></i>
+                        Cart
+                    </a>
+
+                    <!-- SIDEBAR / MENU BUTTON -->
+                    <button
+                        class="menu-btn sidebar-btn"
+                        type="button"
+                        aria-label="Open side menu"
+                        aria-controls="albertoSidebar"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#albertoSidebar">
+
+                        <i class="bi bi-layout-sidebar"></i>
+                        <span class="btn-label">Menu</span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <div
+        class="offcanvas offcanvas-end text-bg-dark"
+        tabindex="-1"
+        id="albertoSidebar">
+
+        <div class="offcanvas-header">
+
+            <h5 class="offcanvas-title">
+                ALBERTO
+            </h5>
+
+            <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas">
+            </button>
+
+        </div>
+
+        <div class="offcanvas-body">
+
+            <p class="text-secondary">
+                Luxury timepieces crafted with elegance,
+                precision and timeless design.
+            </p>
+
+            <hr>
+
+            <ul class="list-unstyled">
+
+                <li class="mb-3">
+                    <a href="../index.html" class="text-white text-decoration-none">
+                        <i class="bi bi-house me-2"></i>
+                        Home
+                    </a>
+                </li>
+
+                <li class="mb-3">
+                    <a href="./about.html" class="text-white text-decoration-none">
+                        <i class="bi bi-building me-2"></i>
+                        About
+                    </a>
+                </li>
+
+                <li class="mb-3">
+                    <a href="./services.html" class="text-white text-decoration-none">
+                        <i class="bi bi-gear me-2"></i>
+                        Services
+                    </a>
+                </li>
+
+                <li class="mb-3">
+                    <a href="./product.html" class="text-white text-decoration-none">
+                        <i class="bi bi-watch me-2"></i>
+                        Products
+                    </a>
+                </li>
+
+                <li class="mb-3">
+                    <a href="./contact.html" class="text-white text-decoration-none">
+                        <i class="bi bi-envelope me-2"></i>
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+    <a class="auth-skip" href="#loginEmail">Skip to sign in</a>
+
+    <div class="auth-shell">
+
+        <!-- ================= LEFT : EDITORIAL PANEL ================= -->
+
+        <aside class="auth-aside">
+
+            <figure class="auth-aside__media">
+                <img
+                    src="../images/images (20).jpg"
+                    alt="Skeleton movement on an Alberto timepiece">
+            </figure>
+
+            <div class="auth-aside__inner">
+
+                <!-- LOGO -->
+                <a href="../index.html" class="auth-brand">
+                    <i class="bi bi-watch auth-brand__icon" aria-hidden="true"></i>
+                    <span class="auth-brand__text">
+                        <span class="auth-brand__name">ALBERTO</span>
+                        <span class="auth-brand__tagline">Watch Company</span>
+                    </span>
+                </a>
+
+                <div class="auth-aside__copy">
+
+                    <span class="auth-aside__kicker">Members Only</span>
+
+                    <h1 class="auth-aside__title">
+                        Your collection,<br>
+                        <em>kept in perfect time.</em>
+                    </h1>
+
+                    <p class="auth-aside__lead">
+                        Sign in to follow servicing appointments, reserve
+                        incoming pieces before they reach the boutique, and
+                        keep every certificate in one place.
+                    </p>
+
+                </div>
+
+                <div class="auth-aside__quote">
+
+                    <p>
+                        &ldquo;Alberto looked after my grandfather's chronograph
+                        before they looked after mine. Nothing has changed.&rdquo;
+                    </p>
+
+                    <cite>Daniel R. &middot; Client since 1998</cite>
+
+                </div>
+
+                <ul class="auth-aside__stats">
+                    <li>
+                        <b>70</b>
+                        <span>Years</span>
+                    </li>
+                    <li>
+                        <b>12</b>
+                        <span>Boutiques</span>
+                    </li>
+                    <li>
+                        <b>40k+</b>
+                        <span>Collectors</span>
+                    </li>
+                </ul>
+
+            </div>
+
+        </aside>
+
+        <!-- ================= RIGHT : SIGN-IN CARD ================= -->
+
+        <main class="auth-main">
+
+            <div class="auth-card">
+
+                <div class="auth-card__top">
+
+                    <!-- brand, shown on small screens only -->
+                    <a href="../index.html" class="auth-card__brand">
+                        <i class="bi bi-watch auth-brand__icon" aria-hidden="true"></i>
+                        <span class="auth-brand__text">
+                            <span class="auth-brand__name">ALBERTO</span>
+                            <span class="auth-brand__tagline">Watch Company</span>
+                        </span>
+                    </a>
+
+                    <a href="../index.html" class="auth-back">
+                        <i class="bi bi-arrow-left" aria-hidden="true"></i>
+                        Back to store
+                    </a>
+
+                </div>
+
+                <div class="auth-card__body">
+
+                    <h2 class="auth-title">Sign In</h2>
+
+                    <p class="auth-sub">
+                        Enter the details registered with your account to
+                        continue to the members' lounge.
+                    </p>
+
+                    <!-- ================= FORM ================= -->
+
+                    <form
+                        class="auth-form"
+                        id="loginForm"
+                        novalidate
+                        autocomplete="on">
+
+                        <!-- form level feedback -->
+                        <div
+                            class="auth-alert"
+                            id="loginAlert"
+                            role="alert"
+                            aria-live="assertive"
+                            hidden>
+
+                            <i class="bi bi-exclamation-triangle" aria-hidden="true"></i>
+                            <span data-alert-text></span>
+
+                        </div>
+
+                        <!-- ---------- EMAIL ---------- -->
+
+                        <div class="auth-field" data-field="email">
+
+                            <label class="auth-label" for="loginEmail">
+                                Email Address
+                            </label>
+
+                            <div class="auth-control auth-control--icon">
+
+                                <input
+                                    class="auth-input"
+                                    type="email"
+                                    id="loginEmail"
+                                    name="email"
+                                    placeholder="you@example.com"
+                                    autocomplete="email"
+                                    inputmode="email"
+                                    spellcheck="false"
+                                    maxlength="254"
+                                    required
+                                    aria-describedby="loginEmailHint loginEmailError">
+
+                                <i class="bi bi-envelope" aria-hidden="true"></i>
+
+                            </div>
+
+                            <p class="auth-hint" id="loginEmailHint">
+                                The address your watches are registered to.
+                            </p>
+
+                            <p class="auth-error" id="loginEmailError" hidden></p>
+
+                        </div>
+
+                        <!-- ---------- PASSWORD ---------- -->
+
+                        <div class="auth-field" data-field="password">
+
+                            <label class="auth-label" for="loginPassword">
+                                Password
+                                <span class="auth-optional">Min. 8 characters</span>
+                            </label>
+
+                            <div class="auth-control auth-control--icon auth-control--toggle">
+
+                                <input
+                                    class="auth-input"
+                                    type="password"
+                                    id="loginPassword"
+                                    name="password"
+                                    placeholder="Enter your password"
+                                    autocomplete="current-password"
+                                    maxlength="72"
+                                    minlength="8"
+                                    required
+                                    aria-describedby="loginPasswordError">
+
+                                <i class="bi bi-lock" aria-hidden="true"></i>
+
+                                <button
+                                    class="auth-toggle"
+                                    type="button"
+                                    id="togglePassword"
+                                    aria-label="Show password"
+                                    aria-pressed="false">
+
+                                    <i class="bi bi-eye" aria-hidden="true"></i>
+
+                                </button>
+
+                            </div>
+
+                            <div class="auth-strength" data-strength hidden>
+
+                                <span
+                                    class="auth-strength__bars"
+                                    data-level="0"
+                                    aria-hidden="true">
+
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                </span>
+
+                                <span class="auth-strength__text" data-strength-text>
+                                    Strength
+                                </span>
+
+                            </div>
+
+                            <p class="auth-error" id="loginPasswordError" hidden></p>
+
+                        </div>
+
+                        <!-- ---------- REMEMBER / FORGOT ---------- -->
+
+                        <div class="auth-meta">
+
+                            <label class="auth-check">
+                                <input
+                                    type="checkbox"
+                                    id="rememberMe"
+                                    name="remember"
+                                    value="yes">
+
+                                <span class="auth-check__box" aria-hidden="true"></span>
+
+                                <span>Keep me signed in</span>
+                            </label>
+
+                            <a class="auth-forgot" href="./contact.html">
+                                Forgot password?
+                            </a>
+
+                        </div>
+
+                        <!-- ---------- SUBMIT ---------- -->
+
+                        <button class="auth-submit" type="submit" id="loginSubmit">
+                            <span class="spinner" aria-hidden="true"></span>
+                            <span data-submit-text>Sign In</span>
+                            <i class="bi bi-arrow-right" aria-hidden="true"></i>
+                        </button>
+
+                    </form>
+
+                    <p class="auth-card__foot">
+                        New to Alberto?
+                        <a href="./contact.html">Request an account</a>
+                    </p>
+
+                    <p class="auth-demo">
+                        Demo &mdash; <code>collector@albertowatches.com</code>
+                        &middot; <code>Watch@1954</code>
+                    </p>
+
+                    <p class="auth-legal">
+                        Protected by 256-bit encryption. By signing in you agree to
+                        our <a href="../index.html">Terms</a> and
+                        <a href="../index.html">Privacy Policy</a>.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <!-- jQuery (required by custom scripts) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../js/javascript.js"></script>
+
+</body>
+</html>

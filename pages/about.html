@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alberto Watch Company</title>
+     <link rel="shortcut icon" href="../images/Untitled design.png" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+   <link rel="stylesheet" href="../css/styles.css?v=9">
+</head>
+<body>
+    <!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg alberto-navbar sticky-top">
+
+    <div class="container">
+
+        <!-- LOGO -->
+        <a href="../index.html" class="brand-logo">
+
+            <i class="bi bi-watch"></i>
+
+            <span class="brand-text">
+                <span class="brand-name">ALBERTO</span>
+                <span class="brand-tagline">WATCH COMPANY</span>
+            </span>
+
+        </a>
+
+
+        <!-- MOBILE TOGGLER -->
+        <button
+            class="navbar-toggler menu-btn"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#albertoNavbar"
+            aria-controls="albertoNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <i class="bi bi-list"></i>
+
+        </button>
+
+
+        <!-- NAVIGATION -->
+        <div class="collapse navbar-collapse" id="albertoNavbar">
+
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="../index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./services.html">
+                        Services
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./product.html">
+                        Products
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <!-- RIGHT SIDE -->
+            <div class="nav-actions">
+
+                <button class="nav-btn">
+                    <i class="bi bi-person"></i>
+                    Login
+                </button>
+
+                <a class="nav-btn" href="./cart.html">
+                    <i class="bi bi-bag"></i>
+                    Cart
+                </a>
+
+                <!-- SIDEBAR / MENU BUTTON -->
+                <button
+                    class="menu-btn sidebar-btn"
+                    type="button"
+                    aria-label="Open side menu"
+                    aria-controls="albertoSidebar"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#albertoSidebar">
+
+                    <i class="bi bi-layout-sidebar"></i>
+                    <span class="btn-label">Menu</span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- ================= SIDEBAR ================= -->
+
+<div
+    class="offcanvas offcanvas-end text-bg-dark"
+    tabindex="-1"
+    id="albertoSidebar">
+
+    <div class="offcanvas-header">
+
+        <h5 class="offcanvas-title">
+            ALBERTO
+        </h5>
+
+        <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="offcanvas">
+        </button>
+
+    </div>
+
+    <div class="offcanvas-body">
+
+        <p class="text-secondary">
+            Luxury timepieces crafted with elegance,
+            precision and timeless design.
+        </p>
+
+        <hr>
+
+        <ul class="list-unstyled">
+
+            <li class="mb-3">
+                <a href="../index.html" class="text-white text-decoration-none">
+                    <i class="bi bi-house me-2"></i>
+                    Home
+                </a>
+            </li>
+
+            <li class="mb-3">
+                <a href="./about.html" class="text-white text-decoration-none">
+                    <i class="bi bi-building me-2"></i>
+                    About
+                </a>
+            </li>
+
+            <li class="mb-3">
+                <a href="./services.html" class="text-white text-decoration-none">
+                    <i class="bi bi-gear me-2"></i>
+                    Services
+                </a>
+            </li>
+
+            <li class="mb-3">
+                <a href="./product.html" class="text-white text-decoration-none">
+                    <i class="bi bi-watch me-2"></i>
+                    product
+                </a>
+            </li>
+
+            <li class="mb-3">
+                <a href="./contact.html" class="text-white text-decoration-none">
+                    <i class="bi bi-envelope me-2"></i>
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+
+<!-- Bootstrap JS -->
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<!-- Custom JS -->
+<script src="../js/javascript.js"></script>
+
+ <section class="page-hero">
+    <span class="page-hero__dial" aria-hidden="true"></span>
+
+    <div class="container">
+      <div class="page-hero__inner">
+
+        <nav class="page-hero__crumb ph-in ph-in--1" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a>
+          <span class="sep" aria-hidden="true">/</span>
+          <span aria-current="page">About</span>
+        </nav>
+
+        <span class="page-hero__eyebrow ph-in ph-in--2">
+          <i class="bi bi-watch"></i>
+          Est. 1954 &nbsp;&middot;&nbsp; Madison Avenue, New York
+        </span>
+
+        <h1 class="ph-in ph-in--3">About<span class="accent">Us</span></h1>
+
+        <div class="page-hero__rule ph-in ph-in--4" aria-hidden="true"></div>
+
+        <p class="page-hero__lead ph-in ph-in--4">Behind every tick is a team of
+          master watchmakers, licensed gemologists and client concierges who have
+          spent their lives learning how to bring time back to life.</p>
+
+        <div class="page-hero__actions ph-in ph-in--5">
+          <a href="./services.html" class="ph-btn ph-btn--solid">
+            <i class="bi bi-tools"></i>
+            Our Services
+          </a>
+          <a href="./contact.html" class="ph-btn ph-btn--ghost">
+            <i class="bi bi-envelope"></i>
+            Get In Touch
+          </a>
+        </div>
+
+        <ul class="page-hero__stats ph-in ph-in--6">
+          <li>
+            <b>1954</b>
+            <span>Established</span>
+          </li>
+          <li>
+            <b>3</b>
+            <span>Generations</span>
+          </li>
+          <li>
+            <b>3,000+</b>
+            <span>Verified Reviews</span>
+          </li>
+        </ul>
+
+      </div>
+    </div>
+
+    <span class="page-hero__cue" aria-hidden="true">
+      Scroll
+      <i></i>
+    </span>
+  </section>
+
+
+ <!-- ===== MISSION & VISION ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">What Guides Us</span>
+        <h2>Mission & Vision</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="split">
+        <div>
+          <img src="../images/360_F_686504411_VSvKU18CTHKYfh1293uRaET6LfkHW1dr.jpg">
+        </div>
+        <div>
+          <h3>Keeping Time, Earning Trust</h3>
+          <p><strong>Our mission</strong> is simple: to keep every timepiece - from a cherished heirloom to a brand-new smartwatch - running exactly as it should, and to make the people who own them feel looked after.</p>
+          <p><strong>Our vision</strong> is to remain the most trusted full-service watch house in America, where repair, appraisal and retail live under one roof and every customer is treated like a member of the family.</p>
+          <ul>
+            <li>Honest advice before every sale, repair or appraisal</li>
+            <li>Genuine parts and factory-grade tooling, always</li>
+            <li>Fair, transparent pricing with no hidden surprises</li>
+            <li>A warm welcome for first-timers and collectors alike</li>
+          </ul>
+          <a href="services.html" class="btn btn-gold">See What We Do</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ===== MEET THE TEAM ===== -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">The Hands Behind The Work</span>
+        <h2>Meet The Team</h2>
+        <p>Certified specialists who have spent their careers learning how to bring time back to life.</p>
+        <div class="divider"></div>
+      </div>
+      <div class="tech-grid">
+        <div class="tech-card">
+          <img class="tech-photo" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Marco Alberto">
+          <h3>Marco Alberto</h3>
+          <p>Third-generation owner and master watchmaker, trained in the original Madison Avenue workshop.</p>
+        </div>
+        <div class="tech-card">
+          <img class="tech-photo" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Elena Rossi">
+          <h3>Elena Rossi</h3>
+          <p>Head of appraisal and licensed gemologist, documenting provenance for insurers and estates.</p>
+        </div>
+        <div class="tech-card">
+          <img class="tech-photo" src="https://randomuser.me/api/portraits/men/75.jpg" alt="David Chen">
+          <h3>David Chen</h3>
+          <p>Senior movement specialist focused on automatic calibres, chronographs and vintage restoration.</p>
+        </div>
+        <div class="tech-card">
+          <img class="tech-photo" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Priya Nair">
+          <h3>Priya Nair</h3>
+          <p>Smart-watch lead, handling pairing, sensor calibration and firmware for every major brand.</p>
+        </div>
+        <div class="tech-card">
+          <img class="tech-photo" src="https://randomuser.me/api/portraits/women/33.jpg" alt="Sofia Marchetti">
+          <h3>Sofia Marchetti</h3>
+          <p>Client concierge who guides every visitor from first enquiry to final collection.</p>
+        </div>
+        <div class="tech-card">
+          <img class="tech-photo" src="https://randomuser.me/api/portraits/men/85.jpg" alt="James Okoro">
+          <h3>James Okoro</h3>
+          <p>Workshop technician specialising in case refinishing, gaskets and water-resistance testing.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- ===== WHY CHOOSE US ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">The Alberto Difference</span>
+        <h2>Why Choose Us</h2>
+        <p>Four reasons customers have trusted us with their timepieces for generations.</p>
+        <div class="divider"></div>
+      </div>
+      <div class="process-grid">
+        <div class="process-step"><div class="step-num">1</div><h3>Truly Full-Service</h3><p>Repair, appraisal and retail under one roof - no sending your watch away to strangers.</p></div>
+        <div class="process-step"><div class="step-num">2</div><h3>Certified Experts</h3><p>Master watchmakers and licensed gemologists with decades of experience at the bench.</p></div>
+        <div class="process-step"><div class="step-num">3</div><h3>Genuine Parts</h3><p>Factory-sourced components and a 2-year guarantee on every repair we complete.</p></div>
+        <div class="process-step"><div class="step-num">4</div><h3>Personal Care</h3><p>Straight answers, fair prices and a concierge who remembers your name.</p></div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ===== AWARDS & RECOGNITION ===== -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Proud Moments</span>
+        <h2>Awards &amp; Recognition</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="timeline">
+        <div class="tl-item"><div class="tl-year">2018</div><p>Named "Best Independent Watch Service" by the New York Horological Society.</p></div>
+        <div class="tl-item"><div class="tl-year">2020</div><p>Awarded authorised service status for two additional Swiss luxury houses.</p></div>
+        <div class="tl-item"><div class="tl-year">2023</div><p>Recognised for excellence in vintage restoration at the National Watchmakers Guild.</p></div>
+        <div class="tl-item"><div class="tl-year">2026</div><p>Rated five stars across more than 3,000 verified customer reviews.</p></div>
+      </div>
+    </div>
+  </section>
+  <!-- ===== COMPANY DETAILS ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="kicker">Find Us</span>
+        <h2>Company Details</h2>
+        <div class="divider"></div>
+      </div>
+      <div class="contact-info">
+       
+        <div class="contact-card">
+          <div class="cico">&#128205;</div>
+          <h3>Address</h3>
+          <p>245 Madison Avenue, Suite 1200<br>New York, NY 10016, United States</p>
+        </div>
+        <div class="contact-card">
+          <div class="cico">&#128222;</div>
+          <h3>Phone</h3>
+          <p>+1 (212) 555-0184<br>Toll-free: 1-800-555-ALB</p>
+        </div>
+        <div class="contact-card">
+          <div class="cico">&#128338;</div>
+          <h3>Working Hours</h3>
+          <p>Mon - Sat: 9 AM - 7 PM<br>Sunday: 11 AM - 5 PM</p>
+        </div>
+      </div>
+      <div class="about-cta">
+        <a href="contact.html" class="btn btn-gold">Get In Touch</a>
+        <a href="about.html" class="btn">Read Our Full History</a>
+      </div>
+    </div>
+  </section>
+<!-- ============ FOOTER ============ -->
+    <footer class="footer">
+
+        <!-- Top row: brand + link groups -->
+        <div class="footer-top">
+
+            <!-- Brand -->
+            <div>
+                <div class="logo">
+                    <span>&#9201;</span>
+                    <span>ALBERTO</span>
+                </div>
+                <p class="brand-text">
+                    Full-service watch repair, appraisal and retail since 1952.
+                    An unparalleled selection of luxury timepieces, delivered
+                    with first-class service.
+                </p>
+
+                <!-- Social -->
+                <h4 class="footer-social-title">Follow Us</h4>
+                <ul class="footer-social">
+                    <li>
+                        <a href="https://www.instagram.com/albertowatches"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Alberto Watch Company on Instagram">
+                            <i class="bi bi-instagram" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/albertowatches"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Alberto Watch Company on Facebook">
+                            <i class="bi bi-facebook" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/albertowatches"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Alberto Watch Company on LinkedIn">
+                            <i class="bi bi-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../index.html#home">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Collections -->
+            <div>
+                <h4>Top Collections</h4>
+                <ul>
+                    <li><a href="product.html#collection">Luxury Watches</a></li>
+                    <li><a href="product.html#collection">Vintage Watches</a></li>
+                    <li><a href="product.html#collection">Smart Watches</a></li>
+                    <li><a href="../index.html#prices">Price List</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div>
+                <h4>Contact Info</h4>
+                <ul class="footer-contact">
+                    <li>
+                        <strong>Address</strong>
+                        <small>245 Madison Avenue, New York, NY 10016</small>
+                    </li>
+                    <li>
+                        <strong>Phone</strong>
+                        <small><a href="tel:+12125550184">+1 (212) 555-0184</a></small>
+                    </li>
+                    <li>
+                        <strong>Email</strong>
+                        <small><a href="mailto:info@albertowatches.com">info@albertowatches.com</a></small>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Bottom row: copyright + small links -->
+        <div class="footer-bottom">
+            <span>&copy; 2026 Alberto Watch Company. All rights reserved.</span>
+            <div class="fb-links">
+                <a href="../index.html#home">Home</a>
+                <a href="about.html">About</a>
+                <a href="../index.html#gallery">Gallery</a>
+                <a href="services.html">Service</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>

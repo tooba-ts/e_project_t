@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alberto Watch Company</title>
+ <link rel="shortcut icon" href="../images/Untitled design.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <!-- Bootstrap Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    >
+   <link rel="stylesheet" href="../css/styles.css?v=9">
+</head>
+<body class="contact-page">
+    <!-- ================= NAVBAR ================= -->
+
+<nav class="navbar navbar-expand-lg alberto-navbar sticky-top">
+
+    <div class="container">
+
+        <!-- LOGO -->
+        <a href="../index.html" class="brand-logo">
+
+            <i class="bi bi-watch"></i>
+
+            <span class="brand-text">
+                <span class="brand-name">ALBERTO</span>
+                <span class="brand-tagline">WATCH COMPANY</span>
+            </span>
+
+        </a>
+
+
+        <!-- MOBILE TOGGLER -->
+        <button
+            class="navbar-toggler menu-btn"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#albertoNavbar"
+            aria-controls="albertoNavbar"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+
+            <i class="bi bi-list"></i>
+
+        </button>
+
+
+        <!-- NAVIGATION -->
+        <div class="collapse navbar-collapse" id="albertoNavbar">
+
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./about.html">
+                        About
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./services.html">
+                        Services
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./product.html">
+                        Products
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="./contact.html" aria-current="page">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+
+            <!-- RIGHT SIDE -->
+            <div class="nav-actions">
+
+                <button class="nav-btn" type="button">
+                    <i class="bi bi-person"></i>
+                    Login
+                </button>
+
+                <a class="nav-btn" href="./cart.html">
+                    <i class="bi bi-bag"></i>
+                    Cart
+                </a>
+
+                <!-- SIDEBAR / MENU BUTTON -->
+                <button
+                    class="menu-btn sidebar-btn"
+                    type="button"
+                    aria-label="Open side menu"
+                    aria-controls="albertoSidebar"
+                    data-bs-toggle="offcanvas"
+                    data-bs-target="#albertoSidebar">
+
+                    <i class="bi bi-layout-sidebar"></i>
+                    <span class="btn-label">Menu</span>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- ================= SIDEBAR ================= -->
+
+<div
+    class="offcanvas offcanvas-end text-bg-dark"
+    tabindex="-1"
+    id="albertoSidebar">
+
+    <div class="offcanvas-header">
+
+        <h5 class="offcanvas-title">
+            ALBERTO
+        </h5>
+
+        <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="offcanvas">
+        </button>
+
+    </div>
+
+    <div class="offcanvas-body">
+
+        <p class="text-secondary">
+            Luxury timepieces crafted with elegance,
+            precision and timeless design.
+        </p>
+
+        <hr>
+
+        <ul class="list-unstyled">
+
+            <li class="mb-3">
+                <a href="../index.html" class="text-white text-decoration-none">
+                    <i class="bi bi-house me-2"></i>
+                    Home
+                </a>
+            </li>
+
+            <li class="mb-3">
+                <a href="./about.html" class="text-white text-decoration-none">
+                    <i class="bi bi-building me-2"></i>
+                    About
+                </a>
+            </li>
+
+            <li class="mb-3">
+                <a href="./services.html" class="text-white text-decoration-none">
+                    <i class="bi bi-gear me-2"></i>
+                    Services
+                </a>
+            </li>
+
+            <li class="mb-3">
+                <a href="./product.html" class="text-white text-decoration-none">
+                    <i class="bi bi-watch me-2"></i>
+                    product
+                </a>
+            </li>
+
+            <li class="mb-3">
+                <a href="./contact.html" class="text-white text-decoration-none">
+                    <i class="bi bi-envelope me-2"></i>
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</div>
+
+
+<!-- jQuery (required by custom scripts) -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+</script>
+
+<!-- Custom JS -->
+<script src="../js/javascript.js"></script>
+
+
+<!-- ===== HERO ===== -->
+    <section class="page-hero">
+        <span class="page-hero__dial" aria-hidden="true"></span>
+
+        <div class="container">
+            <div class="page-hero__inner">
+
+                <nav class="page-hero__crumb ph-in ph-in--1" aria-label="Breadcrumb">
+                    <a href="../index.html">Home</a>
+                    <span class="sep" aria-hidden="true">/</span>
+                    <span aria-current="page">Contact</span>
+                </nav>
+
+                <span class="page-hero__eyebrow ph-in ph-in--2">
+                    <i class="bi bi-headset"></i>
+                    Replies Within 24 Hours
+                </span>
+
+                <h1 class="ph-in ph-in--3">Contact<span class="accent">Us</span></h1>
+
+                <div class="page-hero__rule ph-in ph-in--4" aria-hidden="true"></div>
+
+                <p class="page-hero__lead ph-in ph-in--4">Let's keep your watch ticking. Reach out anytime and
+                    our team of horologists will personally reply within 24 hours.</p>
+
+                <div class="page-hero__actions ph-in ph-in--5">
+                    <a href="#message-heading" class="ph-btn ph-btn--solid">
+                        <i class="bi bi-send"></i>
+                        Send A Message
+                    </a>
+                    <a href="tel:+12125550184" class="ph-btn ph-btn--ghost">
+                        <i class="bi bi-telephone"></i>
+                        +1 (212) 555-0184
+                    </a>
+                </div>
+
+                <ul class="page-hero__stats ph-in ph-in--6">
+                    <li>
+                        <b>245</b>
+                        <span>Madison Ave, NY</span>
+                    </li>
+                    <li>
+                        <b>Mon&ndash;Sat</b>
+                        <span>9 AM &ndash; 7 PM</span>
+                    </li>
+                    <li>
+                        <b>24h</b>
+                        <span>Reply Time</span>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+
+        <span class="page-hero__cue" aria-hidden="true">
+            Scroll
+            <i></i>
+        </span>
+    </section>
+
+
+    <main class="page-content">
+        <section class="contact-section" aria-labelledby="contact-heading">
+            <div class="contact-intro">
+                <span class="badge">Get in Touch</span>
+                <h2 class="main-heading" id="contact-heading">Contact <span>Us</span></h2>
+                <p class="sub">We'd love to hear from you. Reach out anytime and our team of horologists will personally reply within 24 hours.</p>
+
+                <div class="social">
+                    <a href="https://www.facebook.com/albertowatches"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Alberto Watch Company on Facebook">
+                        <i class="bi bi-facebook" aria-hidden="true"></i>
+                        Facebook
+                    </a>
+                    <a href="https://www.instagram.com/albertowatches"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Alberto Watch Company on Instagram">
+                        <i class="bi bi-instagram" aria-hidden="true"></i>
+                        Instagram
+                    </a>
+                    <a href="https://www.linkedin.com/company/albertowatches"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Alberto Watch Company on LinkedIn">
+                        <i class="bi bi-linkedin" aria-hidden="true"></i>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+
+            <div class="contact-details">
+                <div class="info-item">
+                    <div class="icon">
+                        <i class="bi bi-geo-alt"></i>
+                    </div>
+                    <div>
+                        <h3>Our Address</h3>
+                        <p>245 Madison Avenue, Suite 1200
+New York, NY 10016, United States</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="icon">
+                        <i class="bi bi-envelope"></i>
+                    </div>
+                    <div>
+                        <h3>Email Us</h3>
+                        <p>albertoclocks.gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <div class="icon">
+                        <i class="bi bi-telephone"></i>
+                    </div>
+                    <div>
+                        <h3>Call Us</h3>
+                        <p>+1 (212) 555-0184 <br>Toll-free: 1-800-555-ALB</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="form-map">
+            <section class="form-card" aria-labelledby="message-heading">
+                <h2 class="main-heading" id="message-heading">Send a <span>Message</span></h2>
+                <p class="sub">Have a question about our timepieces or services? Drop us a note — every message matters to us.</p>
+
+                <form action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">
+                            <i class="bi bi-person"></i>
+                            Full Name
+                        </label>
+                         <input type="text" id="name" name="name" placeholder="Enter your full name" pattern="[A-Za-z ]+" required>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">
+                                <i class="bi bi-envelope"></i>
+                                Email Address
+                            </label>
+                            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">
+                                <i class="bi bi-telephone"></i>
+                                Phone
+                            </label>
+                             <input type="tel" id="phone" name="phone" placeholder="+91 00000 00000" inputmode="numeric" pattern="[0-9]{11}" maxlength="11" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">
+                            <i class="bi bi-chat-left-text"></i>
+                            Your Message
+                        </label>
+                        <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">
+                        Send Message
+                        <i class="bi bi-send"></i>
+                    </button>
+                </form>
+            </section>
+
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d182417.05434383918!2d-74.4042143757423!3d40.695064092090426!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1790328314352!5m2!1sen!2s" title="Alberto Watch Company location map" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+        </div>
+    </main>
+<!-- ============ FOOTER ============ -->
+    <footer class="footer">
+
+        <!-- Top row: brand + link groups -->
+        <div class="footer-top">
+
+            <!-- Brand -->
+            <div>
+                <div class="logo">
+                    <span>&#9201;</span>
+                    <span>ALBERTO</span>
+                </div>
+                <p class="brand-text">
+                    Full-service watch repair, appraisal and retail since 1952.
+                    An unparalleled selection of luxury timepieces, delivered
+                    with first-class service.
+                </p>
+
+                <!-- Social -->
+                <h4 class="footer-social-title">Follow Us</h4>
+                <ul class="footer-social">
+                    <li>
+                        <a href="https://www.instagram.com/albertowatches"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Alberto Watch Company on Instagram">
+                            <i class="bi bi-instagram" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/albertowatches"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Alberto Watch Company on Facebook">
+                            <i class="bi bi-facebook" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/company/albertowatches"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Alberto Watch Company on LinkedIn">
+                            <i class="bi bi-linkedin" aria-hidden="true"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="../index.html#home">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="product.html">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <!-- Collections -->
+            <div>
+                <h4>Top Collections</h4>
+                <ul>
+                    <li><a href="product.html#collection">Luxury Watches</a></li>
+                    <li><a href="product.html#collection">Vintage Watches</a></li>
+                    <li><a href="product.html#collection">Smart Watches</a></li>
+                    <li><a href="../index.html#prices">Price List</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div>
+                <h4>Contact Info</h4>
+                <ul class="footer-contact">
+                    <li>
+                        <strong>Address</strong>
+                        <small>245 Madison Avenue, New York, NY 10016</small>
+                    </li>
+                    <li>
+                        <strong>Phone</strong>
+                        <small><a href="tel:+12125550184">+1 (212) 555-0184</a></small>
+                    </li>
+                    <li>
+                        <strong>Email</strong>
+                        <small><a href="mailto:info@albertowatches.com">info@albertowatches.com</a></small>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <!-- Bottom row: copyright + small links -->
+        <div class="footer-bottom">
+            <span>&copy; 2026 Alberto Watch Company. All rights reserved.</span>
+            <div class="fb-links">
+                <a href="../index.html#home">Home</a>
+                <a href="about.html">About</a>
+                <a href="../index.html#gallery">Gallery</a>
+                <a href="services.html">Service</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+
+    </footer>
+
+</body>
+</html>
